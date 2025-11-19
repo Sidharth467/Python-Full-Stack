@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+        }
+
+     
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .appointment-btn {
+            background: #d4a21c;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .appointment-btn:hover{
+            background: #dac58d;
+            color: rgb(24, 21, 21);
+
+        }
+
+      
+        .hero {
+            background-image: url('top-view-table-full-food_23-2149209253.avif');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+      
+        .blog-container {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .blog-card {
+            width: 48%;
+            background: white;
+            display: inline-block;
+            margin: 1%;
+            padding: 10px;
+            vertical-align: top;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .blog-card h3 {
+            margin: 10px 0;
+        }
+
+        .read-btn {
+            display: inline-block;
+            margin-top: 10px;
+            background: #d4a21c;
+            padding: 6px 14px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px 8px;
+        }
+      
+        footer {
+            background: #222;
+            color: white;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;          
+}
+
+        .footer-section {
+            flex:1;
+            width: 23%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 1%;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #ddd;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background: #d4a21c;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .footer-section a{
+            color: #d4a21c;
+        }
+
+        /* @media (max-width: 768px) {
+            .blog-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer-section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">NUTRITION</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="appointment-btn">BOOK AN APPOINTMENT</button>
+    </header>
+
+
+    <div class="hero">
+        <h1>Blog</h1>
+        <p>Images from Freepik</p>
+    </div>
+
+ 
+    <div class="blog-container">
+
+        <div class="blog-card">
+            <img src="images (1).jpg" alt="">
+            <h3>The highest concentration of healthy nutrients</h3>
+            <p>Sample small text about nutrition and health benefits...</p>
+            <a href="#" class="read-btn">READ MORE</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="85855246-woman-eating-fruit.jpg" alt="">
+            <h3>What Is Normal Eating?</h3>
+            <p>Sample small text about healthy eating patterns...</p>
+            <a href="#" class="read-btn">READ MORE</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="beautiful-girl-eating-healthy-food_200074-1194.avif" alt="">
+            <h3>My Favorite Meal Planning Strategy</h3>
+            <p>Sample small text about planning nutritious meals...</p>
+            <a href="#" class="read-btn">READ MORE</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="beautiful-girl-eating-healthy-food-600w-111599714.webp" alt="">
+            <h3>Ten Tips Using Diet and Lifestyle</h3>
+            <p>Sample tips for improving diet and lifestyle...</p>
+            <a href="#" class="read-btn">READ MORE</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-section">
+            <h2>NUTRITION</h2>
+            <p style="color: #d4a21c;">Follow us on social media</p>
+            
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="#">About Me</a>
+            <a href="#">My Blog</a>
+            <a href="#">Consultation</a>
+            <a href="#">Books</a>
+        </div>
+
+        <div class="footer-section">
+            <h4>Services</h4>
+            <a href="#">Support & Motivation</a>
+            <a href="#">Weight Loss Programs</a>
+            <a href="#">Healthy Lifestyle</a>
+        </div>
+
+        <div class="footer-section">
+            <h4>Newsletter</h4>
+            <input type="email" placeholder="Enter email">
+            <button>SUBMIT</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
